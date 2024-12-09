@@ -1,1 +1,1 @@
-docker pull harshitaranya/harshitrepo:latest
+docker pull
