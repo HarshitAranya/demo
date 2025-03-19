@@ -44,11 +44,12 @@ pipeline{
                 echo 'Deploy'
             }
         }
-        stage('Rollback'){
-            steps{
-                sh 'echo Rollback'
-            }
-        }
+        // stage('Rollback'){
+        //     steps{
+        //         // sh 'echo Rollback'
+        //         echo 'Rollback'
+        //     }
+        // }
     }
     post{
         success{
@@ -56,6 +57,7 @@ pipeline{
         }
         failure{
             echo 'fail'
+            echo 'Rollback'
         }
         always{
             echo 'clean'
