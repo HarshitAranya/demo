@@ -13,17 +13,19 @@ pipeline{
             steps{
                 // git branch: 'master', url: 'https://alkjsdfh.com'
                 // sh 'echo hello'
-                echo hello
+                echo 'hello'
             }
         }
         stage('Build'){
             steps{
-                sh 'echo Build'
+                // sh 'echo Build'
+                echo 'Build'
             }
         }
         stage('Test'){
             steps{
-                sh 'echo Test'
+                // sh 'echo Test'
+                echo 'Test'
             }
         }
         stage('Approve'){
@@ -38,7 +40,8 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'echo Deploy'
+                // sh 'echo Deploy'
+                echo 'Deploy'
             }
         }
         stage('Rollback'){
