@@ -47,10 +47,14 @@ pipeline{
             }
         }
         post{
-            success{}
-            failure{}
+            success{
+                echo 'ok'
+            }
+            failure{
+                echo 'fail'
+            }
             always{
-                echo 'clean '
+                echo 'clean'
             }
         }
         
