@@ -46,17 +46,16 @@ pipeline{
                 sh 'echo Rollback'
             }
         }
-        post{
-            success{
-                echo 'ok'
-            }
-            failure{
-                echo 'fail'
-            }
-            always{
-                echo 'clean'
-            }
+    }
+    post{
+        success{
+            echo 'ok'
         }
-        
+        failure{
+            echo 'fail'
+        }
+        always{
+            echo 'clean'
+        }
     }
 }
