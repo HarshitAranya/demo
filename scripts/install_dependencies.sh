@@ -1,1 +1,1 @@
-echo "install_dependencies. sh"
+echo "install_dependencies sh"
