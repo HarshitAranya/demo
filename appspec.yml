@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /html
+    destination: /usr/share/nginx/html
+
+hooks:
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 300
+      runas: root
