@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Deploying HTML files..."
+echo "Deploying HTML files.."
 chown -R nginx:nginx /usr/share/nginx/html
 chmod -R 755 /usr/share/nginx/html
 
